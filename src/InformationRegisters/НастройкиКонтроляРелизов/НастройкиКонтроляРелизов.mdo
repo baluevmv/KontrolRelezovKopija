@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9b9e732-417d-4a0f-92e6-f6e91571b3e8">
+  <producedTypes>
+    <selectionType typeId="8f1efd0a-3af8-4b0f-b716-6a6b093ea2d6" valueTypeId="42157c2c-9063-4d0f-8e0c-fedfcb16be35"/>
+    <listType typeId="ef509833-adaf-453f-bc05-5fc4d2ab6aa5" valueTypeId="b4b4e12b-c58a-4214-b4ec-b48485bc436b"/>
+    <managerType typeId="1a99c332-778f-490b-b194-75c0aaa858d0" valueTypeId="69390e28-8da9-4e69-a980-a9ec90e6fe6a"/>
+    <recordSetType typeId="513abcf7-4a27-4662-8c71-37e8a4c4bbaf" valueTypeId="6e565493-6fd9-4c0d-902b-4a787cdffe67"/>
+    <recordKeyType typeId="14d34e45-c368-49e2-91fa-5d0d39c8c824" valueTypeId="b12b86b8-0598-45b1-aa28-677ac815f353"/>
+    <recordType typeId="fe89168e-bd01-4a1f-b22f-4e94f869daed" valueTypeId="41415d81-4d22-4598-8deb-e51f92b4c177"/>
+    <recordManagerType typeId="0bb45af0-22af-41de-903e-254781e6c14d" valueTypeId="188bda09-ca59-4416-99ec-5bfe3d34bee1"/>
+  </producedTypes>
+  <name>НастройкиКонтроляРелизов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки контроля релизов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="33553b06-9379-49ad-86da-81f417329ebf">
+    <name>КонтрольАктивен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль активен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9c3b6901-44c3-4a5c-bf04-0d2d00422ded">
+    <name>ШаблонУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон уведомления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d02a5ce9-ac98-436a-af9f-c1230bf6b01f">
+    <name>РекомендуемыйСрокУстановкиВДнях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рекомендуемый срок установки в днях</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fed018ce-1ddc-4baf-95aa-90280a557e31">
+    <name>ОтправлятьПовторныеУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлять повторные уведомления</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="93298a3e-1de4-499b-a583-1852104ea719">
+    <name>ШаблонПовторногоУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон повторного уведомления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="52a8f4b8-22b8-42ea-8933-0e2a25b33bd5">
+    <name>ИнтервалПовторныхУведомленийВДнях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал повторных уведомлений в днях</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4515185-6837-46af-9244-5662a3279777">
+    <name>МаксимальноеКоличествоПовторов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное количество повторов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e47c13eb-1296-471a-89b3-e487d18a7f87">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aa239db1-cc87-4a85-a8fb-8cae68bff6d6">
+    <name>ТипОбъектаИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта ИБ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбъектовИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="83099e23-0de7-4792-9dfe-6f73fb4576aa">
+    <name>ОбъектИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ИБ</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

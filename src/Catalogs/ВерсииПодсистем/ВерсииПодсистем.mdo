@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9958fcf2-c376-426a-bbe0-97634e59a58d">
+  <producedTypes>
+    <objectType typeId="63ff3f2d-dd6b-41b6-9755-2d328a613e69" valueTypeId="c1e6ced4-8f83-42e6-8f6c-7bbc53d101bd"/>
+    <refType typeId="eaaf9ce5-224c-461f-bfe5-07b4e339e850" valueTypeId="77711bd1-9fa8-475f-a3e1-53f3e1509462"/>
+    <selectionType typeId="9a887faa-6655-4e99-bedc-0156edaf3a7a" valueTypeId="42acbf9e-4f61-4e9f-b1f8-26226c4f89e3"/>
+    <listType typeId="eef128de-feb2-4adf-b394-ce6361429de3" valueTypeId="69f3cd11-6b75-4f82-a773-66d22ecdcb3b"/>
+    <managerType typeId="febe9a02-82be-46a8-af74-c2f5b338c568" valueTypeId="0cc4244f-b617-4920-bfc6-59e003e0a5cb"/>
+  </producedTypes>
+  <name>ВерсииПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии подсистем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВерсииПодсистем.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВерсииПодсистем.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВерсииПодсистем.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВерсииПодсистем.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВерсииПодсистем.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="6e94f203-acbb-4b38-8970-d96c27a7a916">
+    <name>Подсистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсистема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подсистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6d5217a-cb97-4da5-827e-e4e7d4ca22f8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="670273e3-a89c-47bd-a2ef-208d1dde7be5">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c9cadab2-fad5-4c5a-b84a-80fbd1080f09">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2de92445-d087-4430-aa29-604406d5861c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнформационнаяБаза</dataPath>
+			<field>ИнформационнаяБаза</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШаблонУведомленияПодключение</dataPath>
+			<field>ШаблонУведомленияПодключение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяПредопределенныхДанных</dataPath>
+			<field>ИмяПредопределенныхДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторИБ</dataPath>
+			<field>ИдентификаторИБ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидКонфигурации</dataPath>
+			<field>ВидКонфигурации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Версия</dataPath>
+			<field>Версия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантРазмещения</dataPath>
+			<field>ВариантРазмещения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусПоддержки</dataPath>
+			<field>СтатусПоддержки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусИБ</dataPath>
+			<field>СтатусИБ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяКаталогИБ</dataPath>
+			<field>ИмяКаталогИБ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерверИБ</dataPath>
+			<field>СерверИБ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяСУБД</dataPath>
+			<field>ИмяСУБД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерверСУБД</dataPath>
+			<field>СерверСУБД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияТехнологическойПлатформы</dataPath>
+			<field>ВерсияТехнологическойПлатформы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предопределенный</dataPath>
+			<field>Предопределенный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяНедоступности</dataPath>
+			<field>ВремяНедоступности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время недоступности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИнформационныеБазы.Ссылка КАК ИнформационнаяБаза,
+	ИнформационныеБазы.Ссылка КАК Ссылка,
+	ИнформационныеБазы.ВерсияДанных КАК ВерсияДанных,
+	ИнформационныеБазы.ПометкаУдаления КАК ПометкаУдаления,
+	ИнформационныеБазы.Код КАК Код,
+	ИнформационныеБазы.Наименование КАК Наименование,
+	ИнформационныеБазы.ИдентификаторИБ КАК ИдентификаторИБ,
+	ИнформационныеБазы.ВидКонфигурации КАК ВидКонфигурации,
+	ИнформационныеБазы.Версия КАК Версия,
+	ИнформационныеБазы.ВариантРазмещения КАК ВариантРазмещения,
+	ИнформационныеБазы.СтатусПоддержки КАК СтатусПоддержки,
+	ИнформационныеБазы.СтатусИБ КАК СтатусИБ,
+	ИнформационныеБазы.Комментарий КАК Комментарий,
+	ИнформационныеБазы.ИмяКаталогИБ КАК ИмяКаталогИБ,
+	ИнформационныеБазы.СерверИБ КАК СерверИБ,
+	ИнформационныеБазы.ИмяСУБД КАК ИмяСУБД,
+	ИнформационныеБазы.СерверСУБД КАК СерверСУБД,
+	ИнформационныеБазы.ВерсияТехнологическойПлатформы КАК ВерсияТехнологическойПлатформы,
+	ИнформационныеБазы.Организация КАК Организация,
+	ИнформационныеБазы.ШаблонУведомленияПодключение КАК ШаблонУведомленияПодключение,
+	ИнформационныеБазы.Предопределенный КАК Предопределенный,
+	ИнформационныеБазы.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ЕСТЬNULL(РАЗНОСТЬДАТ(ПингиИнформационныхБазСрезПоследних.Период, &amp;ТекущаяДата, ЧАС), ДАТАВРЕМЯ(1, 1, 1)) КАК ВремяНедоступности
+ИЗ
+	Справочник.ИнформационныеБазы КАК ИнформационныеБазы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПингиИнформационныхБаз.СрезПоследних(&amp;ТекущаяДата, ИнформационнаяБаза.СтатусИБ = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформационныхБаз.Рабочая)) КАК ПингиИнформационныхБазСрезПоследних
+		ПО (ПингиИнформационныхБазСрезПоследних.ИнформационнаяБаза = ИнформационныеБазы.Ссылка)
+ГДЕ
+	ИнформационныеБазы.Ссылка = &amp;ИнформационныеБазы</query>
+	</dataSet>
+	<parameter>
+		<name>ИнформационныеБазы</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Информационные базы</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ИнформационныеБазы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2cf8a9ff-2e27-4581-8933-9c72246399c4">
+  <name>Мониторинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Мониторинг16x16</picture>
+  </picture>
+  <content>InformationRegister.ПингиИнформационныхБаз</content>
+  <content>Document.ЗапросыНаАкцептИБ</content>
+  <content>HTTPService.API</content>
+</mdclass:Subsystem>

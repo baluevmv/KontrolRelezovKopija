@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af514e83-5156-40ba-b7dd-34acf59c26c8">
+  <name>Конфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурации</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВидыКонфигураций</content>
+  <content>Catalog.РедакцииКонфигураций</content>
+  <content>Catalog.ВерсииКонфигураций</content>
+  <parentSubsystem>Subsystem.КаталогПродуктов</parentSubsystem>
+</mdclass:Subsystem>

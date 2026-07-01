@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1cd4b48-6664-4527-89fe-f1819e8100d8">
+  <producedTypes>
+    <refType typeId="118f678d-3565-48be-9bc2-569d082761f0" valueTypeId="35711168-da0b-4d93-bc4c-639d7af16ea1"/>
+    <listType typeId="d1fe16d4-c669-4a90-bf96-65090a6a6813" valueTypeId="5f494749-ae6f-4f2c-9ebb-93e9a119e006"/>
+    <managerType typeId="5424f3e8-3be5-462f-b288-a2e4427e9077" valueTypeId="a7fbf2af-f798-4c0c-a6a6-0b155b183e53"/>
+  </producedTypes>
+  <name>СобытияУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>События уведомлений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2bb8c073-5c5a-4699-9d60-191cc9211156">
+    <name>ОбновлениеКонфигураций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление конфигураций</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

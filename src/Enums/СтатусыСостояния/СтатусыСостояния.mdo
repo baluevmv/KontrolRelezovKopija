@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="391fd1ee-7e47-4fbb-b6ad-b817d8b64c6c">
+  <producedTypes>
+    <refType typeId="c411fb3f-6ee7-482f-b322-c599b2a67915" valueTypeId="d20aa539-e736-472d-a0b3-69d735f9f6c5"/>
+    <listType typeId="fcc5481d-bd57-4fdd-ac08-5131f1e2a068" valueTypeId="6e0ca5df-505a-4de7-adb0-018a0865ddd4"/>
+    <managerType typeId="b3936390-6cf0-4523-aa84-29588d6629e0" valueTypeId="03790d35-cae3-466d-96ad-fee6548cb37a"/>
+  </producedTypes>
+  <name>СтатусыСостояния</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы состояния</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c84d4bde-ceda-45b6-a772-9ed41194f67b">
+    <name>НоваяВерсияДоступна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новая версия доступна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d3c396c7-3489-44f9-8ebd-bff3c7d85c57">
+    <name>ОжидаениеРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидаение реакции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e7dd036f-64f4-4ec5-9049-20939391ba1d">
+    <name>ПланируетсяУстановка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируется установка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1442b9c1-67a9-4292-a0f7-7a37eff38e1e">
+    <name>ПропущенРелиз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропущен релиз</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fe9925cf-507b-4a93-86d8-0ff41cd8eb84">
+    <name>Установлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fbcb1a40-640c-417c-9518-9d798cdda141">
+    <name>Просрочено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просрочено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8f62c7e-7cf0-4559-b077-b63b149be4ef">
+  <producedTypes>
+    <objectType typeId="78b613ce-3761-46d5-a851-b11ae3693c99" valueTypeId="f6cbf7ab-5d10-4c10-8b06-0d10d2400e8b"/>
+    <refType typeId="5e9dd4f0-2e82-4821-9f4e-fe92857739f6" valueTypeId="4bbdbfbc-51ba-4c57-a42a-bad983f6cdf3"/>
+    <selectionType typeId="77909c86-c8d8-4887-8fd7-f82256b30b5b" valueTypeId="06631f95-5208-4c27-bb01-0f23afdce54b"/>
+    <listType typeId="f3f7c50a-1374-4277-942e-c46c0424e064" valueTypeId="0d394372-ec3e-4953-8989-aed617ef9ee9"/>
+    <managerType typeId="a292cf82-8e38-4bea-a9c9-ddc6b0e6d948" valueTypeId="fcde8ef9-2c02-47e7-96e8-44c68653c5b1"/>
+  </producedTypes>
+  <name>КлючиОбновлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключи обновлений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КлючиОбновлений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КлючиОбновлений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="88cb49d4-ce10-4cdf-b5b1-c9c74bdea0c5">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc53076b-84d2-43b8-85eb-77ebb2191f51">
+    <name>ТипОбъектаИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта ИБ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбъектовИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a64de0c2-14d2-46f4-8441-d7736eab0c68">
+    <name>ОбъектИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ИБ</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="96a45245-d824-42a1-9e82-3c3ff6c5abc0">
+    <name>ТекущаяВерсия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущая версия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВерсияОбъектаИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f41b9aa-4168-4abc-a744-f4866f44e6d3">
+    <name>НоваяВерсия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новая версия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВерсияОбъектаИБ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6f31664-8696-4014-b92b-a9db372f168f">
+    <name>ДатаОбнаружения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обнаружения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <templates uuid="b2b885e8-1c8b-4ca5-a0a8-35a45fe29ba9">
+    <name>ДанныеШаблонаСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные шаблона сообщений</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Catalog>

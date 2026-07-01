@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1564e65a-e067-4f17-b64a-f1ac561e0f2e">
+  <name>Уведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ЖурналУведомленийОбОбновлениях</content>
+  <content>InformationRegister.ОчередьПисемОбОбновлениях</content>
+  <content>Report.СводныйОтчетПоСостояниюИС</content>
+  <parentSubsystem>Subsystem.УправлениеОбновлениями</parentSubsystem>
+</mdclass:Subsystem>

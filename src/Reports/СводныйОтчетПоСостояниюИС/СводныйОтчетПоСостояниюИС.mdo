@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7d40872-2f6e-4595-b5be-f020b3191574">
+  <producedTypes>
+    <objectType typeId="9c68c3c6-525c-4305-9dad-1948a19ac3d1" valueTypeId="fb172783-a345-47e6-a54e-201cc3402aed"/>
+    <managerType typeId="86f5caac-077b-4ce0-bd9e-1900b3dfea71" valueTypeId="9bb65429-627d-40fc-86d6-b2a6f3e112c4"/>
+  </producedTypes>
+  <name>СводныйОтчетПоСостояниюИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводный отчет по состоянию ИС</value>
+  </synonym>
+  <comment>КРУ АрышевНС №90932 12.05.2026</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СводныйОтчетПоСостояниюИС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="3ae8837b-035a-48d9-bdbd-e9bd1a9d5a03">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

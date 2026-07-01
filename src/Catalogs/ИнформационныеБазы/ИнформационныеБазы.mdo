@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb49208b-6899-4ec1-aa31-c44806a4cf9c">
+  <producedTypes>
+    <objectType typeId="22018cfb-c1e3-4f01-ad8c-c2d6aa79f0a9" valueTypeId="13da18f2-029f-476e-b0f6-c07202c935fd"/>
+    <refType typeId="3cf9d91d-18b5-4e33-ac6b-66a9e8cca044" valueTypeId="0615bdc1-ce14-465c-a531-5215168e8e67"/>
+    <selectionType typeId="1b71d5e5-8ce1-4988-a707-23e182e7d6a5" valueTypeId="ed41ba16-d400-49d5-a5fa-242be11f3f31"/>
+    <listType typeId="6d633cd7-f23e-4d3f-8072-41f657f30e41" valueTypeId="9b07af9e-d33a-4198-b76c-0ab7b7db7270"/>
+    <managerType typeId="3cc3e345-7888-4c1a-aee4-c5a790b638d8" valueTypeId="f0bb2fe4-b755-4c65-b598-8c415fa71e87"/>
+  </producedTypes>
+  <name>ИнформационныеБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информационные базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИнформационныеБазы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИнформационныеБазы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockFields>Catalog.ИнформационныеБазы.Attribute.ИдентификаторИБ</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИнформационныеБазы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ИнформационныеБазы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="59523d5e-cbad-470e-9553-61fa2ce23952">
+    <name>ИдентификаторИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="af150c4d-8ae6-422c-8c34-6bdca6b81a01">
+    <name>ВидКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид конфигурации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5b25de16-75b5-4d29-b5d1-4ae1366bfd4c">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="59aedfd8-db71-4392-9790-96b98e040741">
+    <name>ВариантРазмещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант размещения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыРазмещенияИнформационныхБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a2771536-0744-443e-94d7-62f966bb51f8">
+    <name>СтатусПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус поддержки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыПоддержки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6ac9685-b56f-4380-9467-43fac7bbedbe">
+    <name>СтатусИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ИБ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыИнформационныхБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="29dfdced-12f8-461f-93b8-9ffde9a88378">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="209a606d-d01e-49cb-b379-7f3df962eef2">
+    <name>ИмяКаталогИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя каталог ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8165208f-c70a-4d17-b72b-400b75b3dd6c">
+    <name>СерверИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер ИБ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Серверы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипСервера</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыСерверов.EnumValue.Кластер1С</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a0c40b7-e844-481d-abcc-1452d74eb154">
+    <name>ИмяСУБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя СУБД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0520db90-15bd-483f-b6ae-23b94741bdb5">
+    <name>СерверСУБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер СУБД</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Серверы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипСервера</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыСерверов.EnumValue.СУБД</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c006588-72cc-4b23-a430-9e7e76082d27">
+    <name>ВерсияТехнологическойПлатформы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия техн. платформы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииТехнологическойПлатформы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a298965a-98db-452c-82f4-531644b98f32">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ec8be31a-7975-490b-abd2-43501ed7584c">
+    <name>ШаблонУведомленияПодключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон уведомления подключение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4400f3d4-df17-4717-8e57-bdafab915885">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="27d73523-7151-4f49-b2ea-e03d3fe4efb8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="58ab9737-c5c6-4362-825c-774276a270c3">
+    <name>ДанныеШаблонаСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные шаблона сообщений</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Catalog>

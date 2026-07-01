@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a550a0cb-e655-46fb-a50c-fdae782a89b5">
+  <producedTypes>
+    <objectType typeId="72b45443-a4d9-431d-82ad-602ea4c9ebba" valueTypeId="9e0c296d-fd92-4dd7-96f4-586c40641db0"/>
+    <refType typeId="1b76e7c4-b6f2-4c4b-9771-4a8168db310e" valueTypeId="3e41ba32-63a9-44bb-85f2-9f26c54add22"/>
+    <selectionType typeId="e5588e1b-b719-424f-b40d-9103788f8cb4" valueTypeId="eb1a287c-e750-4fc1-b637-cf15631192e5"/>
+    <listType typeId="09afc40e-c667-42c2-8999-a51d9a174635" valueTypeId="8ab95a86-048c-4c62-8fa1-d3f188357031"/>
+    <managerType typeId="d9186fa9-83f8-466e-a34a-5fbd45dc9feb" valueTypeId="6659045d-72ff-4481-a17d-b98050c62fd8"/>
+  </producedTypes>
+  <name>ВерсииТехнологическойПлатформы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии технологической платформы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВерсииТехнологическойПлатформы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВерсииТехнологическойПлатформы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВерсииТехнологическойПлатформы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВерсииТехнологическойПлатформы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВерсииТехнологическойПлатформы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="cd131798-a397-43f9-9e92-6bd0ec69eb3d">
+    <name>ДатаВыхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выхода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa9d25d5-6732-4aad-8afa-717165183183">
+    <name>URLИнфо</name>
+    <synonym>
+      <key>ru</key>
+      <value>URLИнфо</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a81921c5-a562-4644-aa44-b70300018f3d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="84b2e756-5f35-4257-81b3-6fb15ab6fd10">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1cd735a4-0957-403d-8d2f-c0bae5547caf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5ae0de46-f679-4a58-8cab-8730a7e48596">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b33082fa-b430-4484-a12f-47bed27a1fc1">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

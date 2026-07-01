@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a898377-77ee-4f67-82e3-ff52abd72655">
+  <producedTypes>
+    <objectType typeId="a359f60f-6c29-43ee-a86d-9b5db9b71983" valueTypeId="029a2a21-dd13-4bdc-bd81-2a830d5c3caa"/>
+    <refType typeId="f54ab040-dc08-4152-8289-8320f7f454b5" valueTypeId="8f48d85e-2188-44c5-aa19-5563bb56f15c"/>
+    <selectionType typeId="edb5df7a-ccb1-45be-8c34-01915ae227ee" valueTypeId="97dcca28-a5a2-453e-a813-48f246218e2d"/>
+    <listType typeId="1aa301f9-75d6-44af-a702-0d04e3f5a645" valueTypeId="6c782226-03e0-454d-a6d1-f678949e9164"/>
+    <managerType typeId="d589533a-45ba-4d8a-9f1d-b10a0d37657a" valueTypeId="16480a1e-6348-45a2-adf5-a08424819db6"/>
+  </producedTypes>
+  <name>Серверы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Серверы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Серверы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Серверы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Серверы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Серверы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Серверы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="1b9ea07a-7eaa-4bf5-9038-70a481652237">
+    <name>ТипСервера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сервера</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыСерверов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0b3594eb-5db1-4b3e-822f-15de22df8a34">
+    <name>ТипСУБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип СУБД</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыСУБД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1bb03590-c53b-4485-8109-be03e2406970">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="083d5ee0-bedf-4919-abc7-157fff30389c">
+    <name>Порт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=5; ЧДЦ=0; ЧС=0; ЧГ=0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=5; ЧДЦ=0; ЧС=0; ЧГ=0</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="77c6d602-2c5c-4f19-a457-b078c26611b5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="738577a6-114e-4b1c-9837-6074175c80ca">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="236b685f-b67a-46f4-999f-e5259818a0b9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f49d0c16-c02d-42cb-83e5-affbae3d7b46">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

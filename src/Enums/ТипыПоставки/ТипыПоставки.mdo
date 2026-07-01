@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41ee7a47-8061-4be9-8eb3-ad9c44b057a3">
+  <producedTypes>
+    <refType typeId="62a654df-7069-433b-b101-c31d0b7e6a11" valueTypeId="7a006be2-cfca-4622-9c0d-21870a8383c8"/>
+    <listType typeId="4670ef8f-7f6d-43cd-b54d-6db5949f35ff" valueTypeId="a334e962-04be-4730-ab15-74aebe34fa4d"/>
+    <managerType typeId="0cb3d3d8-c8c1-4693-b773-602f5fec2f14" valueTypeId="56ed8480-e637-4a27-abc0-8a421754490b"/>
+  </producedTypes>
+  <name>ТипыПоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы поставки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1fa33990-2c63-4db6-9cc5-accf41a6d5f4">
+    <name>Обычная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обычная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="69e9f150-dad3-4290-a79b-696fa658d8bf">
+    <name>Длительная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительная</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

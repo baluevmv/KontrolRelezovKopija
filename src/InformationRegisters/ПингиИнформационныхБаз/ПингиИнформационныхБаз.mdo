@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26939af8-debd-436c-a176-7d0379ff92af">
+  <producedTypes>
+    <selectionType typeId="618a8c77-23aa-44f1-9dcd-d01a3b71ff26" valueTypeId="db95c13f-4ea3-4dab-a2de-4c927f95e10f"/>
+    <listType typeId="dbb9b62b-5fd5-4559-8756-8628d1d0060a" valueTypeId="dcfa155c-29a6-4be6-964a-99c46739814c"/>
+    <managerType typeId="1a0c8c7a-e992-4843-9b9b-1cd4ba21ca2b" valueTypeId="b504150e-66eb-40bf-aaed-068fe8294c09"/>
+    <recordSetType typeId="f0aaa883-fd68-4432-904d-d164c28ba866" valueTypeId="299e3908-9ca4-4f02-a911-04e9bd458ee6"/>
+    <recordKeyType typeId="d2f8daf5-df78-4f52-92b2-5b069ac5b826" valueTypeId="f2cde8f2-ccd1-4089-a203-0036417182a9"/>
+    <recordType typeId="c9207048-97c1-4ec9-9304-8b12646dbec0" valueTypeId="79b8bb4e-a1c8-4f3e-8bdc-94346b77734c"/>
+    <recordManagerType typeId="6b572904-0267-48bf-ab36-a09c7458d2e3" valueTypeId="374384b1-1495-4493-b9a2-541c00ef2789"/>
+  </producedTypes>
+  <name>ПингиИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пинги информационных баз</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ffe9049c-5053-4d6c-9999-f6ca5921c795">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

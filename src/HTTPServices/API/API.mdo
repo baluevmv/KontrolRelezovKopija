@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84f03a08-da0c-4538-a2bc-f0a4214fe3a9">
+  <name>API</name>
+  <synonym>
+    <key>ru</key>
+    <value>API</value>
+  </synonym>
+  <rootURL>api</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="69cf3ee9-0d7a-47ce-a395-120dfe5d7a4e">
+    <name>rc_State</name>
+    <synonym>
+      <key>ru</key>
+      <value>Rc state</value>
+    </synonym>
+    <template>/rc_State/*</template>
+    <methods uuid="55c47293-8a33-4551-8d00-4dffb3164e99">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>rc_StatePOST</handler>
+    </methods>
+    <methods uuid="8e3988bf-afc3-4870-bf4d-4591a08a13b6">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>rc_StateGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="098846d6-92b2-4afb-af30-8621c2a8f786">
+    <name>РасширенияБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширения базы</value>
+    </synonym>
+    <comment>КРУ АрышевНС №93002 28.05.26</comment>
+    <template>/extensionsinfo/*</template>
+    <methods uuid="d70a0f00-4e6a-4060-a44f-344a77a096aa">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <comment>КРУ АрышевНС №93002 28.05.26</comment>
+      <httpMethod>POST</httpMethod>
+      <handler>РасширенияБазыPost</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

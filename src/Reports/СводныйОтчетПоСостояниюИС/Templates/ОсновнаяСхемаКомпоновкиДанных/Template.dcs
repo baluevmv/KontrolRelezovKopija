@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АктуальнаяВерсияНомер</dataPath>
+			<field>АктуальнаяВерсияНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуальная версия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная система</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидКонфигурации</dataPath>
+			<field>ВидКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид конфигурации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Версия</dataPath>
+			<field>Версия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая версия</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СправочникИнформационныеБазы.Организация КАК Организация,
+	СправочникИнформационныеБазы.Наименование КАК Наименование,
+	СправочникИнформационныеБазы.ВидКонфигурации КАК ВидКонфигурации,
+	СправочникИнформационныеБазы.Версия КАК Версия,
+	втВерсииКонфигураций.Наименование КАК АктуальнаяВерсияНомер,
+	СправочникИнформационныеБазы.Ссылка КАК ИССсылка,
+	втВерсииКонфигураций.Ссылка КАК АктуальнаяВерсияСсылка
+ПОМЕСТИТЬ ВТ_ВерсииИС
+ИЗ
+	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ВерсииКонфигураций.Наименование КАК Наименование,
+			ВерсииКонфигураций.ВидКонфигурации КАК ВидКонфигурации,
+			ВерсииКонфигураций.Редакция КАК Редакция,
+			ВерсииКонфигураций.Ссылка КАК Ссылка
+		ИЗ
+			Справочник.ВерсииКонфигураций КАК ВерсииКонфигураций
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ВерсииКонфигураций.ВидКонфигурации КАК АктуальнаяВерсияВидКонфигурации,
+					ВерсииКонфигураций.Редакция КАК АктуальнаяВерсияРедакция,
+					МАКСИМУМ(ВерсииКонфигураций.ДатаВыхода) КАК АктуальнаяВерсияДатаРелиза
+				ИЗ
+					Справочник.ВерсииКонфигураций КАК ВерсииКонфигураций
+				ГДЕ
+					НЕ ВерсииКонфигураций.ПометкаУдаления
+					И НЕ ВерсииКонфигураций.РелизОтозван
+				
+				СГРУППИРОВАТЬ ПО
+					ВерсииКонфигураций.ВидКонфигурации,
+					ВерсииКонфигураций.Редакция) КАК тАктуальныеВерсииКонфигураций
+				ПО ВерсииКонфигураций.ВидКонфигурации = тАктуальныеВерсииКонфигураций.АктуальнаяВерсияВидКонфигурации
+					И ВерсииКонфигураций.Редакция = тАктуальныеВерсииКонфигураций.АктуальнаяВерсияРедакция
+					И ВерсииКонфигураций.ДатаВыхода = тАктуальныеВерсииКонфигураций.АктуальнаяВерсияДатаРелиза) КАК втВерсииКонфигураций
+		ПО СправочникИнформационныеБазы.ВидКонфигурации = втВерсииКонфигураций.ВидКонфигурации
+			И СправочникИнформационныеБазы.Версия.Редакция = втВерсииКонфигураций.Редакция
+ГДЕ
+	СправочникИнформационныеБазы.СтатусИБ = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформационныхБаз.Рабочая)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ВерсииИС.Организация КАК Организация,
+	ВТ_ВерсииИС.Наименование КАК Наименование,
+	ВТ_ВерсииИС.ВидКонфигурации КАК ВидКонфигурации,
+	ВТ_ВерсииИС.Версия КАК Версия,
+	ВТ_ВерсииИС.АктуальнаяВерсияНомер КАК АктуальнаяВерсияНомер,
+	СостоянияКонтроляРелизов.Статус КАК Статус
+ИЗ
+	ВТ_ВерсииИС КАК ВТ_ВерсииИС
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияКонтроляРелизов КАК СостоянияКонтроляРелизов
+		ПО ВТ_ВерсииИС.ИССсылка = СостоянияКонтроляРелизов.ИнформационнаяБаза
+			И ВТ_ВерсииИС.АктуальнаяВерсияСсылка = СостоянияКонтроляРелизов.КлючОбновления.НоваяВерсия</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сводный отчет по состоянию ИС</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВидКонфигурации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Версия</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>АктуальнаяВерсияНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Статус</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

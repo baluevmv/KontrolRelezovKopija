@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89b86e5a-101b-4216-91b1-a8619e5b27bf">
+  <name>Состояния</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.СостоянияКонтроляРелизов</content>
+  <parentSubsystem>Subsystem.УправлениеОбновлениями</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff2b00a5-2303-4e3a-8e8a-cf9e630d098a">
+  <producedTypes>
+    <refType typeId="b38b1fca-6869-4a6b-9faa-93ee9cb4db5a" valueTypeId="e56aeb4b-ba9d-4a7f-bf16-f5bee50f4558"/>
+    <listType typeId="c6b7fab6-b842-4d9c-91e4-cd3e9c17a33e" valueTypeId="70c81255-7b6c-4dc7-961a-d755ccf3ae00"/>
+    <managerType typeId="82aaa12a-7e3f-4b50-9c3f-3a2257d31e10" valueTypeId="d94e54ad-65cc-4d36-acf7-262957880b65"/>
+  </producedTypes>
+  <name>НазначенияРасширений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения расширений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f9b2f3ff-6b6f-4846-b895-af5b2b45e8a4">
+    <name>Адаптация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адаптация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c28287a7-b203-4c81-a604-ebb2c6b5294f">
+    <name>Дополнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f4265037-ac56-444e-8b8c-7d3a89a6411a">
+    <name>Исправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправление</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

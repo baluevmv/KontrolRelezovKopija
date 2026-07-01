@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c7ff7d1-b7bd-4d1c-89f7-09c50ad0aad5">
+  <producedTypes>
+    <refType typeId="7d1ef7c8-6560-41e8-804c-cb30e78a55bb" valueTypeId="ae11d061-4496-403f-a12c-841d5391c1de"/>
+    <listType typeId="cdf8fe56-dc85-4a9d-9ab9-767dbe9784a0" valueTypeId="994d81da-d3a4-422c-bcf9-0c1cf7952696"/>
+    <managerType typeId="2cb75a88-77aa-4535-839f-fb14b0b63690" valueTypeId="e790e5d9-eefd-4e2f-9a42-3223ca9298db"/>
+  </producedTypes>
+  <name>СпособыУведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы уведомления</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3fa78e8d-89b0-4a73-a5aa-ac91ab89b867">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

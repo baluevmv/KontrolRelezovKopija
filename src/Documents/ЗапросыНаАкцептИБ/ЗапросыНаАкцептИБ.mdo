@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a111810-568a-4366-8770-825919dd009c">
+  <producedTypes>
+    <objectType typeId="6a0b898b-e608-4e89-bb56-3c126ed352f2" valueTypeId="01702178-e3c1-462a-8e83-b433181474ff"/>
+    <refType typeId="2491ed3b-434b-488f-9027-9113365ddfc5" valueTypeId="6a2d6580-14b1-4e44-87b9-c90e19016def"/>
+    <selectionType typeId="5a4cab2e-cb77-4bbb-94e5-8d8841139c38" valueTypeId="29919b09-fa2b-4f2a-9605-32f5a2d156ad"/>
+    <listType typeId="3085197a-c522-48a3-b69d-7cf0799e69c3" valueTypeId="0dd4d937-4ba3-4a8b-bc6e-9513acbf013c"/>
+    <managerType typeId="d341bafb-9531-4543-9e33-ac67c443b44e" valueTypeId="bef815a5-dadc-48e9-839b-cdf1ec25238b"/>
+  </producedTypes>
+  <name>ЗапросыНаАкцептИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запросы на акцепт ИБ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗапросыНаАкцептИБ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Запрос на акцепт ИБ</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="aeea070f-4021-49e9-8959-962d45cd0d61">
+    <name>ИдентификаторИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ccc1c5e-69e4-453a-b67d-32590b3d58f9">
+    <name>СтрокаСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка соединения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="11ec59f5-03ec-4366-9ec8-fb1bdc823c81">
+    <name>ТелоЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело запроса</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b385a86b-7a53-496b-a261-48b87550992d">
+    <name>ВремяПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время получения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bfd9b345-1ef7-458a-94d1-03ee63bb2ee8">
+    <name>СтатусОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус обработки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОбработкиЗапросовНаАкцепт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="81b293f4-085e-41d3-9f2c-d9c95a5ee507">
+    <name>ПринялРешение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принял решение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="648d8def-fe6c-4635-bd23-973093f7db06">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <templates uuid="d24af7a8-b3d8-44fe-b659-4d6ca14308f3">
+    <name>ДанныеШаблонаСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные шаблона сообщений</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Document>

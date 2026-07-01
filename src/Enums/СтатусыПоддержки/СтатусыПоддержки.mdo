@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4a23d51-a98e-417a-816d-a428b5dc513a">
+  <producedTypes>
+    <refType typeId="adf61399-1d14-4f7b-a8c0-3ecad49efba9" valueTypeId="1b77eaca-6a51-4ca2-ac92-9c358009ff26"/>
+    <listType typeId="19acc120-fc84-456d-b6a7-1737b13ae0ea" valueTypeId="15c1d982-4170-405e-a89e-5d66036a5d14"/>
+    <managerType typeId="f622f0bf-ba82-4f9a-acd4-7210a365e177" valueTypeId="e13add77-4d40-42d0-b178-c4ffd3ecd42d"/>
+  </producedTypes>
+  <name>СтатусыПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы поддержки</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d711583f-61b5-4b90-968f-d6a8c892dba2">
+    <name>ТиповаяНеРедактируется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовая не редактируется</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c17c77dc-873f-4623-b9f6-3cf301eb56ee">
+    <name>ТиповаяИзмененнаяССохранениемПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовая измененная с сохранением поддержки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2fdac67f-00f7-409c-a04b-9bf28541389c">
+    <name>ТиповаяИзмененнаяСнятаСПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовая измененная снята с поддержки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c584041a-e5bf-4a62-b68b-bf323e2e0f62">
+    <name>НеОпределено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не определено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

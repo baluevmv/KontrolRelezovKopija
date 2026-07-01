@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1a25829-56d6-4a7a-a780-c3118ee7e9ce">
+  <name>СоставИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав ИБ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ВерсииКонфигурацийИБ</content>
+  <content>InformationRegister.УстановленныеПодсистемы</content>
+  <content>InformationRegister.УстановленныеРасширенияКонфигураций</content>
+  <content>InformationRegister.ПолученныеДанныеИБ</content>
+  <parentSubsystem>Subsystem.ИнформационныеБазы</parentSubsystem>
+</mdclass:Subsystem>

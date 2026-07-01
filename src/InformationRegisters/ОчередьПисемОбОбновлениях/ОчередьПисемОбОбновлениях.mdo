@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6782c448-75d0-40d7-aad1-0685557ee1db">
+  <producedTypes>
+    <selectionType typeId="674cfe15-6d77-4d07-aafc-09f146a4c0c0" valueTypeId="c593c105-8bf1-4d99-ba07-e0e77629b931"/>
+    <listType typeId="e6388b3d-ee2b-49a8-b544-28889d4e7bf0" valueTypeId="d351fb29-08d1-4560-9051-dfa10df5a12a"/>
+    <managerType typeId="1a1d9a31-ced2-4a50-997c-b9eb7979d9a2" valueTypeId="e355396e-2128-40ef-a5be-a6000deaa02f"/>
+    <recordSetType typeId="cc921022-711e-4564-8fc7-3f12b3b62d4f" valueTypeId="3d2dd165-feb7-4875-9621-f158113431d1"/>
+    <recordKeyType typeId="b79c531b-1824-4777-83e5-83e3a18125e6" valueTypeId="cac09dba-f9a1-494f-97c5-5ca2dfe693ee"/>
+    <recordType typeId="f1084c45-7a1b-4620-885c-f776446be9a7" valueTypeId="a77b6499-8003-427a-925a-230e8fbfc44b"/>
+    <recordManagerType typeId="e3477595-83de-45b3-939d-5b4428eb280d" valueTypeId="6ff30b2e-f1db-4c7c-8aa1-ed50956a1ef5"/>
+  </producedTypes>
+  <name>ОчередьПисемОбОбновлениях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь писем об обновлениях</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6840fb4c-2d9a-45b8-ac0d-bbec5d4f0a48">
+    <name>ДатаДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата добавления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="42ab040b-e884-446a-9791-f763dfbd647c">
+    <name>ДатаОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отправки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ebfe10ac-0f20-4509-93cc-a4dab855a28f">
+    <name>Письмо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="9f794220-f2e7-4842-9e5f-b7d2c029410d">
+    <name>ИдентификаторУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор уведомления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="f07a4c46-3777-4327-b6c1-1c8c8bd33feb">
+    <name>ИдентификаторПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор письма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="082638d1-d8e4-488d-a0a2-bd6e37dfb0e8">
+  <producedTypes>
+    <refType typeId="82b719ab-056e-45f3-9734-665eadea15c5" valueTypeId="e28ed433-8d4c-4a5e-a742-69d46350b685"/>
+    <listType typeId="86e7c555-6611-4bed-bd15-ed8b2f7c15c7" valueTypeId="fa3cde81-eb3d-4744-a94c-2a047d95a570"/>
+    <managerType typeId="83a3432f-0aca-4cff-bf8f-1fe744d190b7" valueTypeId="260db187-89c6-402a-b514-39b42ec6c74f"/>
+  </producedTypes>
+  <name>ТипыУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы уведомлений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="247840b6-936f-43d5-b95f-bffe042b6bbf">
+    <name>Первичное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b78d589e-ccc7-4045-a464-9b22a83d78e4">
+    <name>Повторное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторное</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

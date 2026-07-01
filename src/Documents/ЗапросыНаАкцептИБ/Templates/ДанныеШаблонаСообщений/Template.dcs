@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТелоЗапроса</dataPath>
+			<field>ТелоЗапроса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтрокаСоединения</dataPath>
+			<field>СтрокаСоединения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проведен</dataPath>
+			<field>Проведен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторИБ</dataPath>
+			<field>ИдентификаторИБ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПолучения</dataPath>
+			<field>ВремяПолучения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусОбработки</dataPath>
+			<field>СтатусОбработки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПринялРешение</dataPath>
+			<field>ПринялРешение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнформационнаяБаза</dataPath>
+			<field>ИнформационнаяБаза</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗапросыНаАкцептИБ.Ссылка КАК Ссылка,
+	ЗапросыНаАкцептИБ.ВерсияДанных КАК ВерсияДанных,
+	ЗапросыНаАкцептИБ.ПометкаУдаления КАК ПометкаУдаления,
+	ЗапросыНаАкцептИБ.Номер КАК Номер,
+	ЗапросыНаАкцептИБ.Дата КАК Дата,
+	ЗапросыНаАкцептИБ.Проведен КАК Проведен,
+	ЗапросыНаАкцептИБ.ИдентификаторИБ КАК ИдентификаторИБ,
+	ЗапросыНаАкцептИБ.СтрокаСоединения КАК СтрокаСоединения,
+	ЗапросыНаАкцептИБ.ТелоЗапроса КАК ТелоЗапроса,
+	ЗапросыНаАкцептИБ.ВремяПолучения КАК ВремяПолучения,
+	ЗапросыНаАкцептИБ.СтатусОбработки КАК СтатусОбработки,
+	ЗапросыНаАкцептИБ.ПринялРешение КАК ПринялРешение,
+	ЗапросыНаАкцептИБ.ИнформационнаяБаза КАК ИнформационнаяБаза
+ИЗ
+	Документ.ЗапросыНаАкцептИБ КАК ЗапросыНаАкцептИБ
+ГДЕ
+	ЗапросыНаАкцептИБ.Ссылка = &amp;ЗапросыНаАкцептИБ</query>
+	</dataSet>
+	<parameter>
+		<name>ЗапросыНаАкцептИБ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Запросы на акцепт ИБ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗапросыНаАкцептИБ</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5be39175-b601-4452-b5af-ba613b960fc4">
+  <producedTypes>
+    <objectType typeId="104705be-68d3-4942-81d1-0418c9300d10" valueTypeId="b5752e33-8bab-4dfd-8a6b-0377c1a00a57"/>
+    <refType typeId="857bca7f-1b04-48da-9c74-3598a4443a26" valueTypeId="a879357c-3eed-4e28-a453-13059755652e"/>
+    <selectionType typeId="8c1b16b8-c403-439a-a9a8-e63646300169" valueTypeId="66609320-d9f4-465d-90ff-224d96a5466e"/>
+    <listType typeId="13b98150-ecce-4bb5-a07b-9e444cc0cad7" valueTypeId="09ec5f00-cc2a-4789-bcee-78e18099938d"/>
+    <managerType typeId="f24bdded-77b0-40ad-b16f-8b23daf932ed" valueTypeId="c2a8f476-d582-41ac-9a5d-75e65081c9f2"/>
+  </producedTypes>
+  <name>ВидыКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды конфигураций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыКонфигураций.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыКонфигураций.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="47bb5db4-de1c-47b6-90e3-1724ca6e8962">
+      <name>БухгалтерияПредприятия</name>
+      <description>БухгалтерияПредприятия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="e64a0922-e397-4fd2-aa99-220523c050f1">
+      <name>БухгалтерияПредприятияКОРП</name>
+      <description>БухгалтерияПредприятияКОРП</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="9d273ae0-5f28-45b7-8c59-94341c10c4d5">
+      <name>ЗарплатаИУправлениеПерсоналом</name>
+      <description>ЗарплатаИУправлениеПерсоналом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="6129c5a4-926f-420d-8bac-1528640e5536">
+      <name>ЗарплатаИУправлениеПерсоналомКОРП</name>
+      <description>ЗарплатаИУправлениеПерсоналомКОРП</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="825bcb4a-f7e5-4c65-840d-92868aeb11d7">
+      <name>Метрология</name>
+      <description>Метрология</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="caa6f81f-df89-4eaf-88ec-1d014916cc45">
+      <name>ОхранаОкружающейСреды</name>
+      <description>Охрана окружающей среды</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="9277bca1-d67b-42fb-b11a-72d6529107d7">
+      <name>УправлениеНСИ</name>
+      <description>Управление НСИ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="fbd557a9-051b-4d38-b935-194741271d9b">
+      <name>УправлениеУчебнымЦентром</name>
+      <description>Управление учебным центром</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="137770f5-8bcf-4ee1-ab10-f6d9f1bb775d">
+      <name>УправлениеПредприятием</name>
+      <description>Управление холдингом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="b0f1150d-fd3b-493a-a2c9-912e88eb35a6">
+      <name>УправлениеХолдингом</name>
+      <description>УправлениеХолдингом</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="fecdb847-3dbf-466b-8dbd-dca696230653">
+      <name>УправлениеХолдингомERP</name>
+      <description>УправлениеХолдингомERP</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыКонфигураций.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыКонфигураций.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="7a72d949-b30b-4afb-ad41-4c178e6e2b72">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dae7b3db-1e4c-433f-a03b-8396ad46f8aa">
+    <name>КодПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код программы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="124f931d-34da-4e9f-a356-87064e3aa905">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="086de24f-96f6-4f0a-8fb0-2494fb79b41f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f4202f26-216a-4cd7-9094-a6d7924668a1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

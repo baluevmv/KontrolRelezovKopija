@@ -1,0 +1,7 @@
+bin/
+target/
+.metadata/
+.settings/
+*.bak
+*.log
+.project

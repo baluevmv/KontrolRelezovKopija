@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b236482-4bfa-42f6-a01c-8ef5a334afe9">
+  <producedTypes>
+    <objectType typeId="875e2125-f582-4751-8f03-f9ba9b5489e2" valueTypeId="e23f46e1-4473-42f2-b05a-5fff91020eea"/>
+    <refType typeId="f317b486-d043-4474-8fbe-aadc1ccd9b83" valueTypeId="3d490328-0b85-4019-9519-2a27fd41befc"/>
+    <selectionType typeId="bf0ec6b5-3a24-4604-bb04-51f2e78d9ab0" valueTypeId="df288926-9249-4da6-b0bc-d2810d30322b"/>
+    <listType typeId="df2c2a16-e2ce-4cfb-83e6-ee80e669a59d" valueTypeId="7ee03edf-983e-4d8c-b50c-978414e9dbb8"/>
+    <managerType typeId="73e06c98-1dce-40c0-ba05-bd81babb934a" valueTypeId="3bb45a17-2731-4942-aa53-ede1589b53ec"/>
+  </producedTypes>
+  <name>РасширенияКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расширения конфигураций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РасширенияКонфигураций.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РасширенияКонфигураций.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Расширение</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Расширения</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.РасширенияКонфигураций.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.РасширенияКонфигураций.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a6de9ce1-27fa-446c-855a-b79c9423de85">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f8d8fb07-803d-480a-8533-0cd7d209b781">
+    <name>КодПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код программы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="819bae28-32f5-4352-83e5-ba12fece1e0b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5fe2312f-e7e8-4704-a414-832614717556">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7e7f35e1-c0b7-4e1d-8e25-94adc62fdc0f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

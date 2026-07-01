@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23dd06a0-3732-47e2-ac09-6d3cedd9f908">
+  <producedTypes>
+    <refType typeId="456d82dc-ad56-4690-843e-f88d88bb52c7" valueTypeId="6571e82e-d2eb-4714-ba30-c03bc93b61c4"/>
+    <listType typeId="6e374c34-d04a-4ef4-8ca5-6c2ec047e2d0" valueTypeId="1554c546-f6b7-44d2-a1cc-a6849533918f"/>
+    <managerType typeId="e0e4f82f-c3c3-4aa5-8f5c-31915bf8e623" valueTypeId="04c6a2ce-958b-45a5-ad05-597312d82909"/>
+  </producedTypes>
+  <name>ТипыСУБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы СУБД</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cb501842-14a3-46dc-b51f-91cdfc389650">
+    <name>MSSQL</name>
+    <synonym>
+      <key>ru</key>
+      <value>MSSQL</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="31e1a5f2-0bd1-4d24-9408-ef0932bbdf73">
+    <name>PostgreSQL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Postgre SQL</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

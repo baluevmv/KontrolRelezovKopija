@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0d2fb0b-74d7-46c5-8757-54ad9cf985fd">
+  <producedTypes>
+    <objectType typeId="a08d8493-82e2-46cf-bcd2-9e5d8cdcb595" valueTypeId="9f2c4cff-81c7-4cfd-9b9f-cb75bab620f6"/>
+    <refType typeId="4f720eb7-444e-42ab-8d1e-02134d3471e4" valueTypeId="5f5f92c4-9565-412e-9ec9-a230bfbd9644"/>
+    <selectionType typeId="305e8b5d-c039-4651-84b4-f0e2daf2c61f" valueTypeId="6c25186c-e80a-4b4d-a1cb-e259c045c75f"/>
+    <listType typeId="aa0a05cb-70c9-4d25-973a-85bbd3658c0e" valueTypeId="1f9f13a3-bb87-4c91-b502-4513e3b23ad7"/>
+    <managerType typeId="e56c223d-a558-4858-94e9-1beb92f3ae82" valueTypeId="a30a6084-6968-4403-8190-ffecf034bfdc"/>
+  </producedTypes>
+  <name>ВерсииРасширенийКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии расширений конфигураций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВерсииРасширенийКонфигураций.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВерсииРасширенийКонфигураций.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Версия расширения</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Версии расширений</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВерсииРасширенийКонфигураций.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВерсииРасширенийКонфигураций.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВерсииРасширенийКонфигураций.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="719df210-328a-487d-9d7d-6737827ca42d">
+    <name>Расширение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РасширенияКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="53aa995b-dba7-491a-b4de-e554fe948e5b">
+    <name>ДатаВыхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выхода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f9710bb-b59e-4f04-bd09-659a1f1c6cb1">
+    <name>ХешСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>SHA-1</value>
+    </synonym>
+    <comment>SHA-1</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="962ee385-8988-4808-85aa-6a9b30cf7b48">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a0561bd2-b204-4b1c-b897-0ebe84d854ff">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fadfaeb8-5e15-4514-8297-4673e81f7027">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e206d16d-6f34-4bcb-bc89-6e0587fc3028">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

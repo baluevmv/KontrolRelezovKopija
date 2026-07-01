@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3ccb447-3b38-4a50-8b33-75973d286bda">
+  <name>Инфраструктура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инфраструктура</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Инфраструктура16x16</picture>
+  </picture>
+  <content>Catalog.Серверы</content>
+  <content>Catalog.ВерсииТехнологическойПлатформы</content>
+  <content>InformationRegister.ОтветственныеЗаПодключенияИБ</content>
+  <content>InformationRegister.ОтветственныеЗаРасширенияКонфигураций</content>
+</mdclass:Subsystem>

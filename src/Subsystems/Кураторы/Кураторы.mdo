@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15c9fe7f-f700-4e6b-aa52-be7f22e8b2cf">
+  <name>Кураторы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кураторы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Кураторы16x16</picture>
+  </picture>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ОтветственныеЛица</content>
+  <content>InformationRegister.ОтветственныеЗаИБ</content>
+</mdclass:Subsystem>

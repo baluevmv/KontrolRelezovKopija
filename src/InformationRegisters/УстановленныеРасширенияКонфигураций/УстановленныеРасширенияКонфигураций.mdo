@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f5a6215-8a2b-4b35-aba2-2af0dd320826">
+  <producedTypes>
+    <selectionType typeId="11cab5cd-f5a5-4827-8ca7-53873945de12" valueTypeId="19f883e8-1b76-46a3-9f77-cc0a53f3f9d7"/>
+    <listType typeId="09560e41-ee30-4d0b-95d6-6f5d082c2933" valueTypeId="ac14b9c9-f998-43f1-9833-bd43224607d1"/>
+    <managerType typeId="49fa4d34-3b00-4f03-ade5-cd8e71291e4b" valueTypeId="c5e66ce1-60d5-41fa-88e6-65b349025cff"/>
+    <recordSetType typeId="93a7c714-1235-40c1-8048-e1230edf7a7b" valueTypeId="729aaebf-2a76-4096-91f4-e3a1124b25d6"/>
+    <recordKeyType typeId="c189c35a-c7bb-4796-9436-bf9a468217c4" valueTypeId="084ad942-e44f-460e-8232-87f6043036dd"/>
+    <recordType typeId="207fcd5b-31bd-4b01-9dd6-1dbe9f14b57c" valueTypeId="8323a04f-8ca3-433a-840e-977e6b3b887c"/>
+    <recordManagerType typeId="4bef840b-dd00-4d72-9101-1f9ce663928a" valueTypeId="b4d1608c-f6a1-47cb-b2e8-6c68932f76c1"/>
+  </producedTypes>
+  <name>УстановленныеРасширенияКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установленные расширения конфигураций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d93fce57-df3b-43ed-bff2-d6204622b0bc">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииРасширенийКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3d4db688-07e0-4597-bfe8-cdc21d18701a">
+    <name>Исключить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исключить</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0cb08ed5-1c2d-413b-ada2-43631d20d5a0">
+    <name>ХешСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш сумма (SHA-1)</value>
+    </synonym>
+    <comment>SHA-1</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="7edc5a85-fa53-46fa-8af8-94ababd845f9">
+    <name>Активно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bbc5fae5-40a8-432a-ba48-1c67c5f07d0d">
+    <name>Назначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НазначенияРасширений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e0fd9bda-45ea-4dd2-a804-9b50f7ac4757">
+    <name>БезопасныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Безопасный режим</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="59820c48-cb1b-4b2c-85e5-3f77df2f2940">
+    <name>Модифицировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модифицировано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4672095e-edbd-41cb-bc9a-39fda1043140">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="606ca89a-60b4-4e64-ba1d-032a753ba735">
+    <name>РасширениеКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение конфигурации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РасширенияКонфигураций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

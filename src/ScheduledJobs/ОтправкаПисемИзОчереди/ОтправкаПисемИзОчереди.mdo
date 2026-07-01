@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e9fd151-5ba6-435b-b0a8-b8b251cff9c1">
+  <name>ОтправкаПисемИзОчереди</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка писем из очереди</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ОтправкаПисемИзОчереди</methodName>
+  <description>Отправка писем из очереди</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

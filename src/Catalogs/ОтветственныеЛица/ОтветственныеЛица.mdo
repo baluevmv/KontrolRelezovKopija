@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42b3b2ef-113c-4736-b014-de493ffeea8d">
+  <producedTypes>
+    <objectType typeId="871d578f-7421-4a5b-ad9f-41f5eda07b8b" valueTypeId="4c6dcb63-9357-41a5-b436-9e2e2097d870"/>
+    <refType typeId="3cf85afc-488d-4d3d-a789-56307c9092f1" valueTypeId="243dac89-f8fb-4230-9fdb-45ef1192f05e"/>
+    <selectionType typeId="c6545fe0-d3fc-4f32-8c81-ac70b5abaddd" valueTypeId="008ac6f4-fef3-4060-94f3-84bb99070b40"/>
+    <listType typeId="09aadd89-72b9-4234-8f6d-3b83e463343b" valueTypeId="24344e5a-cbd0-4734-8e3d-71df500f4cc7"/>
+    <managerType typeId="8007ae6d-8c67-4eb1-9cb8-38b73e2cf1ff" valueTypeId="0d9fe37c-6613-40a3-a95b-b372daa4cb7f"/>
+  </producedTypes>
+  <name>ОтветственныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОтветственныеЛица.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ОтветственныеЛица.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="2260ab56-6d90-45b8-9006-595c14c003b7">
+    <name>Email</name>
+    <synonym>
+      <key>ru</key>
+      <value>Email</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>320</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2e0feb46-008a-46c1-a3c7-1ef0abef62f9">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f433cd4-76e6-4fa3-8ed5-bf463820afbe">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

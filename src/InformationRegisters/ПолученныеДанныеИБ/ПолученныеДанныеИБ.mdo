@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23954c6c-c9c0-4cb9-bbfb-c6af335b5274">
+  <producedTypes>
+    <selectionType typeId="5aae3eb8-7f9d-47d9-bbdc-af4610280d4c" valueTypeId="62aff30c-1063-402d-9b27-bc465bb3ae47"/>
+    <listType typeId="f5c42a98-903d-45f5-b89d-8060ecf19639" valueTypeId="2eb54c3b-5c04-449d-900a-6f0fdd17b145"/>
+    <managerType typeId="d57d34b6-be0f-49d1-bb55-e7da5baaad3a" valueTypeId="df449df6-3600-4122-a02b-e5ee9dadec86"/>
+    <recordSetType typeId="4cafc833-ebe9-4c37-8124-4259383b29f2" valueTypeId="5779c96a-56a2-4436-83db-4240625cdb6d"/>
+    <recordKeyType typeId="86b6f3ba-e5ab-4a76-bea4-1d285128df81" valueTypeId="18a34a48-659e-4bff-9db9-db58f52fbd50"/>
+    <recordType typeId="6d174b9e-0577-4b6f-b80c-1a7a243eb03e" valueTypeId="d011c73b-2897-42b6-808a-c64e9b84f00e"/>
+    <recordManagerType typeId="0d804276-ca51-4589-bafd-ce7c72902502" valueTypeId="c59398c3-ab0f-4148-912f-846b7d48f01e"/>
+  </producedTypes>
+  <name>ПолученныеДанныеИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полученные данные ИБ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8811ad75-1106-4d8e-95d1-eec335ae11a7">
+    <name>ХешСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш сумма (SHA-256)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="802073f1-529b-4d25-af6e-1862257feab6">
+    <name>ТелоЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело запроса</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2ce2af48-d73e-461d-8773-235e545ff2e2">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

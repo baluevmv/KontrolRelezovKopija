@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f399ceb4-0edf-4b18-92cd-c3c44487685b">
+  <producedTypes>
+    <refType typeId="00d68152-d293-4dc1-9c19-5c91733ba8a5" valueTypeId="aed8da25-cc9d-401d-b14d-a57ee4d7d8c6"/>
+    <listType typeId="09b302a1-1eed-4f67-89df-7c0cd84331fb" valueTypeId="a5c7d3c5-b726-4a39-ad07-3fa1e0786775"/>
+    <managerType typeId="a1fbf2df-1288-47d2-9369-cc114df5657f" valueTypeId="ca8505c0-04a4-4654-baed-5f32bf5c26aa"/>
+  </producedTypes>
+  <name>СтатусыИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы информационных баз</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f56782fa-4e33-4267-bfe6-612716238ac3">
+    <name>Рабочая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d19f7467-b406-42fe-aa45-1302f1341c11">
+    <name>Тестовая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестовая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="904e306d-4a7e-4eee-9668-d5e26b3a6f64">
+    <name>Архивная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Архивная</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

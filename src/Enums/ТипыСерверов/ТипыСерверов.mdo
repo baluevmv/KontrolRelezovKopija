@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b47ff4d-91a4-493c-b483-b633482eb603">
+  <producedTypes>
+    <refType typeId="1377f3af-e697-48b5-866f-b9f18707460d" valueTypeId="420cae8b-b8d8-47a7-b1be-501f0e3db0e9"/>
+    <listType typeId="02859f70-550b-4146-b2fc-11d38bb26a62" valueTypeId="4c67773f-1d0d-45a9-810f-a62d7e6b7551"/>
+    <managerType typeId="969bfd50-4fcf-4eb5-800a-97da45c249ab" valueTypeId="c9e03084-8c5b-45fd-a528-3c0e7773ce83"/>
+  </producedTypes>
+  <name>ТипыСерверов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы серверов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="55eea5b0-e555-480c-bb11-a1a7bb3809e8">
+    <name>Кластер1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер 1С</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="23f3cea3-3cd6-42fd-a82b-17f6bd4221a9">
+    <name>СУБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>СУБД</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

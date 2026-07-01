@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f571f54a-251d-42a1-9f3a-6b0ab6e8c8c9">
+  <producedTypes>
+    <refType typeId="841ea291-d32d-4bc4-af5a-e309f99e5510" valueTypeId="2f796d68-5402-4651-ba18-a5100400ae93"/>
+    <listType typeId="748bdb80-76f8-46e8-acf1-3427eac46596" valueTypeId="c115ee45-f5e2-4598-84e8-d88497b52949"/>
+    <managerType typeId="466fb18d-e59a-4fd3-8d71-4063a9366322" valueTypeId="f1d71045-0594-4d00-9346-3ecb5f2f51d4"/>
+  </producedTypes>
+  <name>ВариантыРазмещенияИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты размещения информационных баз</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c62d04ce-a3c9-4eb8-bbe6-935ceb7093e6">
+    <name>Файловый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файловый</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ea59fb92-6dd6-4c64-a38d-21b8dc5b9a80">
+    <name>КлиентСерверный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент-серверный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

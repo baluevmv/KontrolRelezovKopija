@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e61739d-36db-4573-a988-82a72bbd3178">
+  <producedTypes>
+    <managerType typeId="7316dc0c-523a-4598-a4aa-a867d8bb18a2" valueTypeId="9b7eebca-e3e4-4150-87df-21bac07ee7ec"/>
+    <valueManagerType typeId="149f8dea-2cec-4e80-ab30-3fbe1664f2d7" valueTypeId="0b846a69-f327-466a-8a76-3f4076fd0cbe"/>
+    <valueKeyType typeId="63cb5b5c-a04d-4c77-b343-bc5d2365a4b0" valueTypeId="9218857b-f89d-4811-b585-52572c3b5613"/>
+  </producedTypes>
+  <name>НедоступностьБазыЧас</name>
+  <synonym>
+    <key>ru</key>
+    <value>Недоступность базы час</value>
+  </synonym>
+  <comment>КРУ АрышевНС №87706 14.04.2026</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

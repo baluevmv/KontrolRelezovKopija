@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6758244-ebe8-45ef-983d-a3e3c157d9b3">
+  <name>ВерсииТехнологическойПлатформы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии технологической платформы</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e064bbc8-834e-4ccd-a8b8-8775b5fc40da">
+  <name>Расширения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расширения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.РасширенияКонфигураций</content>
+  <content>Catalog.ВерсииРасширенийКонфигураций</content>
+  <parentSubsystem>Subsystem.КаталогПродуктов</parentSubsystem>
+</mdclass:Subsystem>

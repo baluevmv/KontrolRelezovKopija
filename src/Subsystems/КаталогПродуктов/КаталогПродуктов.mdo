@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="174c8938-05dd-49fe-91e6-d8a7eff7abcd">
+  <name>КаталогПродуктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог продуктов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.КаталогПродуктов16x16</picture>
+  </picture>
+  <subsystems>Конфигурации</subsystems>
+  <subsystems>Подсистемы</subsystems>
+  <subsystems>Расширения</subsystems>
+</mdclass:Subsystem>

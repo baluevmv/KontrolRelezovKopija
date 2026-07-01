@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4efc849-b1df-4867-a193-bb05bedd5839">
+  <name>АктуализацияСостоянийРелизовИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализация состояний релизов ИБ</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.АктуализацияСостоянийРелизовИБ</methodName>
+  <description>Проверка расхождений версий</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

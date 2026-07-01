@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86616fea-b8c0-4ae8-a92f-4fc57eeebda6">
+  <producedTypes>
+    <objectType typeId="c97e53e1-e6e0-471a-8713-276a36b1287e" valueTypeId="d04065be-ee6d-4f5d-82de-9ed4231bc598"/>
+    <refType typeId="0fc379a4-bd87-42fd-bc00-3cd367547d01" valueTypeId="77a6010a-4972-4572-8db8-f46328955b26"/>
+    <selectionType typeId="b6c57c82-393e-461f-af8c-76e61efc7df3" valueTypeId="700cd343-2aad-4c67-975d-ed360b21797d"/>
+    <listType typeId="6edd0162-5e60-4cf5-89e9-c3bb65f40a43" valueTypeId="e10cc632-96c6-4d50-9076-963015fd8b90"/>
+    <managerType typeId="afc7cbba-7819-4aca-ab4b-002657448144" valueTypeId="47531d31-3824-4d6d-9f74-2d4342ea11e9"/>
+  </producedTypes>
+  <name>Подсистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистемы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Подсистемы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Подсистемы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1dc1179f-2b88-4d0a-b491-182d88d5c697">
+      <name>СтандартныеПодсистемы</name>
+      <description>СтандартныеПодсистемы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Подсистемы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Подсистемы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Подсистемы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="69a763ee-66fe-4299-9b9c-a6db9391281b">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="202dffc6-b75b-47a3-8bec-af4fa7b7754d">
+    <name>КодПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код программы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e01212b7-821b-4ec3-980d-02064554733b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="20f4e5a7-7321-4478-adf9-01d972959e53">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ccdae7b1-d6ad-408c-a6bc-ba9ee8f6d467">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5728b2c4-f9a3-4ee8-a97d-030864bcc402">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

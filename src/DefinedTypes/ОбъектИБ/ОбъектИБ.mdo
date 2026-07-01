@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db50b336-cc50-4c7b-8469-4ebdacc2c3e5">
+  <producedTypes>
+    <containerType typeId="d57cea95-1303-4032-aa7e-b309184dcda4" valueTypeId="4a7c170f-2865-4822-a38c-047cfac4bc73"/>
+  </producedTypes>
+  <name>ОбъектИБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект ИБ</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Подсистемы</types>
+    <types>CatalogRef.ВидыКонфигураций</types>
+    <types>CatalogRef.РасширенияКонфигураций</types>
+  </type>
+</mdclass:DefinedType>
