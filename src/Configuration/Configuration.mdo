@@ -1476,6 +1476,7 @@
   <commonModules>CommonModule.ЯндексПереводчик</commonModules>
   <commonModules>CommonModule.КонтрольДоступностиБазСервер</commonModules>
   <commonModules>CommonModule.HTTPРасширенияБазы</commonModules>
+  <commonModules>CommonModule.Test</commonModules>
   <commonAttributes>CommonAttribute.КомментарийЯзык1</commonAttributes>
   <commonAttributes>CommonAttribute.КомментарийЯзык2</commonAttributes>
   <commonAttributes>CommonAttribute.НаименованиеЯзык1</commonAttributes>
